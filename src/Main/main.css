@@ -1,0 +1,275 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu&display=swap');
+
+@font-face {
+  font-family: smashfont;
+  src: url('../assets/super_smash_bros.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+
+#root {
+  
+}
+
+.container-all {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background:#000000;
+}
+
+.main-container { 
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container {
+  width: 100vw;
+  display: flex;
+  background: none;
+  margin: 0.1px;
+}
+
+.count {
+  color: #3fef14;
+  font-size: 3em;
+  font-family: 'Roboto Mono', monospace;
+  text-shadow: 1px 1px 3px #999899;
+} 
+
+.count-2 {
+  color: #ff4040;
+  font-size: 3em;
+  font-family: 'Roboto Mono', monospace;
+  text-shadow: 1px 1px 3px #999899;
+} 
+
+.btn {
+  width: 6rem;
+  height: 3rem;
+
+  color: #000000;
+  background:#a5a5a5;
+  font-size: 70px;
+  font-family: 'Ubuntu', sans-serif;
+
+  margin: 1px;
+  cursor: pointer;
+  border: none;
+
+  transition: .4s;
+}
+
+.btn-reset {
+  width: 6rem;
+  height: 3rem;
+
+  color: #4c4c4c;
+  background:#a5a5a5;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+
+  margin: 1px;
+  cursor: pointer;
+  border: none;
+
+  transition: .4s;
+}
+
+.btn:hover {
+  background: #c7c7c7;
+  font-size: 75px;
+}
+
+.card {
+  width: 500px;
+  text-align: center;
+}
+
+img {
+  width: 400px;
+}
+
+h1 {
+  font:36px smashfont, Arial, Tahoma, Sans-serif;
+  font-size: 38px;
+}
+
+.footer-container {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-line {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 0.8rem;
+  color: #F8F8FF;
+
+}
+
+.footer-link-container {
+  width: 10vw;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.footer-link { 
+  list-style: none;
+}
+
+.footer-icon {
+  width: 25px;
+  height: 25px;
+
+  transition: .4s;
+}
+
+.footer-icon:hover {
+  transform: scale(1.3);
+}
+
+@media (min-width: 700px) {
+  .count {
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .count-2 {
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 10rem;
+    height: 5rem;
+
+    font-size: 70px;
+    margin: 1.3px;
+  }
+
+  .btn-reset {
+    width: 10rem;
+    height: 5rem;
+
+    font-size: 2.5rem;
+    margin: 1.3px;
+  }
+}
+
+@media (max-width: 500px) {
+  .smash-icon {
+    width: 175px;
+  }
+
+  .main-container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .button-container {
+    justify-content: center;
+    width: 100vw;
+    display: flex;
+    background: none;
+    margin: 0.1px;
+  }
+
+  .btn {
+    font-size: 45px;
+  }
+
+  .btn:hover {
+    font-size: 48px;
+  }
+} 
+
+.head-icons {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.ant-select-selector {
+  height: 35px!important;
+}
+
+.ant-input-number {
+  width: 50px;
+  height: 35px;
+  font-size: 16px;
+  margin-left: 10px;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+.winsLosses {
+  justify-content: space-around;
+}
+
+.char-inputs {
+  align-items: center;
+}
+
+.ant-btn {
+  margin-left: 20px!important;
+}
+
+.ant-list {
+  border: 2px solid white;
+  height: 360px;
+  width: 500px;
+  overflow: auto;
+}
+
+.ant-list li {
+  color: white;
+}
+
+.list-row {
+  align-items: center;
+}
+
+.list-container-col {
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+.ant-list-empty-text {
+  color: white;
+}
+
+.no-data {
+  margin-top: 50px;
+}
+
+.no-data img{
+  width: 170px;
+}
+
+.no-data h1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
